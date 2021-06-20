@@ -1,0 +1,79 @@
+<%
+/* global vcard, liffLink */
+function renderBtn (ctx) {
+  const { vcard, btn } = ctx
+  const uri = btn.link || liffLink
+  return {
+    color: btn.color || '#17c950',
+    height: vcard.btnHeight || 'md',
+    style: btn.style || 'primary',
+    type: 'button',
+    action: {
+      label: btn.text || '預設按鈕文字',
+      type: 'uri',
+      uri,
+    },
+  }
+}
+function renderCard (ctx) {
+  const { vcard, card } = ctx
+  const uri = card.link || liffLink
+  return {
+    type: 'bubble',
+    hero: {
+      animated: true,
+      aspectMode: 'cover',
+      aspectRatio: vcard.ratio || '20:13',
+      size: 'full',
+      type: 'image',
+      url: card.image || '',
+      action: {
+        type: 'uri',
+        uri,
+      },
+    },
+    body: {
+      layout: 'vertical',
+      spacing: 'md',
+      type: 'box',
+      action: {
+        type: 'uri',
+        uri,
+      },
+      contents: [
+        {
+          size: vcard.titleSize || 'xl',
+          text: card.title,
+          type: 'text',
+          weight: 'bold',
+          wrap: true,
+        },
+        {
+          size: vcard.descSize || 'sm',
+          text: card.desc,
+          type: 'text',
+          wrap: true,
+        },
+      ],
+    },
+    footer: {
+      layout: 'vertical',
+      spacing: 'sm',
+      type: 'box',
+      contents: _.map(card.btns, btn => renderBtn({ ...ctx, btn })),
+    },
+  }
+}
+function renderCarousel (ctx) {
+  const { vcard } = ctx
+  return {
+    type: 'flex',
+    altText: vcard.altText,
+    contents: {
+      type: 'carousel',
+      contents: _.map(vcard.cards, card => renderCard({ ...ctx, card })),
+    },
+  }
+}
+print(JSON.stringify(renderCarousel({ vcard })))
+%>
