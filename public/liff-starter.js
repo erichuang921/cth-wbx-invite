@@ -3,7 +3,7 @@ window.onload = function() {
     const defaultLiffId = "1656122875-BakebXJ3";   // change the default LIFF value if you are not using a node server
 
     // DO NOT CHANGE THIS
-    let myLiffId = "";
+    let myLiffId = "1656122875-BakebXJ3";
 
     // if node is used, fetch the environment variable and pass it to the LIFF method
     // otherwise, pass defaultLiffId
@@ -46,7 +46,7 @@ function initializeLiffOrDie(myLiffId) {
 function initializeLiff(myLiffId) {
     liff
         .init({
-            liffId: '1656122875-BakebXJ3'
+            liffId: myLiffId
         })
         .then(() => {
             // start to use LIFF's api
