@@ -19,7 +19,7 @@
       const result = await liff.shareTargetPicker([
         {
           "type": "flex",
-          "altText": "Flex Message",
+          "altText": "您有一則來自 何憶屏 的會議邀請",
           "contents": {
   "type": "bubble",
   "hero": {
@@ -92,10 +92,6 @@
         }
       },
       {
-        "type": "separator",
-        "margin": "md"
-      },
-      {
         "type": "button",
         "style": "primary",
         "height": "sm",
@@ -104,11 +100,13 @@
           "label": "下載 WEBEX 軟體",
           "uri": "https://liff.line.me/1656122875-Rnlb03LP"
         },
-        "color": "#FF77FF"
+        "color": "#FF77FF",
+        "margin": "md"
       }
     ],
     "flex": 0
-  }}}
+  }
+}}
       ])
       if (result) {
         alert(`[${result.status}] Message sent!`)
