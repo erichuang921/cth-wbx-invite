@@ -17,101 +17,101 @@ window.addEventListener('load', () => {
       if(isLoggedIn && liff.isApiAvailable('shareTargetPicker')) {
         liff.shareTargetPicker([
           {
-            "type": "flex",
-            "altText": "您收到一則 WEBEX 線上會議（活動）邀請",
-            "contents": {
-            "type": "bubble",
-            "hero": {
-              "type": "image",
-              "url": "https://line.17team.tk/liff-images/webex.png",
-              "size": "full",
-              "aspectRatio": "20:13",
-              "aspectMode": "cover"
+            type: "flex",
+            altText: "您收到一則 WEBEX 線上會議（活動）邀請",
+            contents: {
+            type: "bubble",
+            hero: {
+              type: "image",
+              url: "https://line.17team.tk/liff-images/webex.png",
+              size: "full",
+              aspectRatio: "20:13",
+              aspectMode: "cover"
             },
-            "body": {
-              "type": "box",
-              "layout": "vertical",
-              "contents": [
+            body: {
+              type: "box",
+              layout: "vertical",
+              contents: [
                 {
-                  "type": "text",
-                  "text": "WEBEX 線上會議邀請",
-                  "weight": "bold",
-                  "size": "xl"
+                  type: "text",
+                  text: "WEBEX 線上會議邀請",
+                  weight: "bold",
+                  size: "xl"
                 },
                 {
-                  "type": "box",
-                  "layout": "vertical",
-                  "margin": "lg",
-                  "spacing": "sm",
-                  "contents": [
+                  type: "box",
+                  layout: "vertical",
+                  margin: "lg",
+                  spacing: "sm",
+                  contents: [
                     {
-                      "type": "box",
-                      "layout": "vertical",
-                      "margin": "lg",
-                      "spacing": "sm",
-                      "contents": [
+                      type: "box",
+                      layout: "vertical",
+                      margin: "lg",
+                      spacing: "sm",
+                      contents: [
                         {
-                          "type": "box",
-                          "layout": "baseline",
-                          "spacing": "sm",
-                          "contents": [
+                          type: "box",
+                          layout: "baseline",
+                          spacing: "sm",
+                          contents: [
                             {
-                              "type": "text",
-                              "text": "邀請人員：",
-                              "color": "#aaaaaa",
-                              "size": "sm"
+                              type: "text",
+                              text: "邀請人員：",
+                              color: "#aaaaaa",
+                              size: "sm"
                             },
                             {
-                              "type": "text",
-                              "text": inviter,
-                              "wrap": true,
-                              "color": "#555555",
-                              "size": "sm",
-                              "flex": 2
+                              type: "text",
+                              text: inviter,
+                              wrap: true,
+                              color: "#555555",
+                              size: "sm",
+                              flex: 2
                             }
                           ]
                         }
                       ]
                     },
                     {
-                      "type": "box",
-                      "layout": "baseline",
-                      "spacing": "sm",
-                      "contents": [
+                      type: "box",
+                      layout: "baseline",
+                      spacing: "sm",
+                      contents: [
                         {
-                          "type": "text",
-                          "text": "開始時間：",
-                          "color": "#aaaaaa",
-                          "size": "sm"
+                          type: "text",
+                          text: "開始時間：",
+                          color: "#aaaaaa",
+                          size: "sm"
                         },
                         {
-                          "type": "text",
-                          "text": start,
-                          "wrap": true,
-                          "color": "#555555",
-                          "size": "sm",
-                          "flex": 2
+                          type: "text",
+                          text: start,
+                          wrap: true,
+                          color: "#555555",
+                          size: "sm",
+                          flex: 2
                         }
                       ]
                     },
                     {
-                      "type": "box",
-                      "layout": "baseline",
-                      "spacing": "sm",
-                      "contents": [
+                      type: "box",
+                      layout: "baseline",
+                      spacing: "sm",
+                      contents: [
                         {
-                          "type": "text",
-                          "text": "結束時間：",
-                          "color": "#aaaaaa",
-                          "size": "sm"
+                          type: "text",
+                          text: "結束時間：",
+                          color: "#aaaaaa",
+                          size: "sm"
                         },
                         {
-                          "type": "text",
-                          "text": end,
-                          "wrap": true,
-                          "color": "#555555",
-                          "size": "sm",
-                          "flex": 2
+                          type: "text",
+                          text: end,
+                          wrap: true,
+                          color: "#555555",
+                          size: "sm",
+                          flex: 2
                         }
                       ]
                     }
@@ -119,32 +119,32 @@ window.addEventListener('load', () => {
                 }
               ]
             },
-            "footer": {
-              "type": "box",
-              "layout": "vertical",
-              "spacing": "sm",
-              "contents": [
+            footer: {
+              type: "box",
+              layout: "vertical",
+              spacing: "sm",
+              contents: [
                 {
-                  "type": "button",
-                  "style": "primary",
-                  "height": "md",
-                  "action": {
-                    "type": "uri",
-                    "label": "加入會議",
-                    "uri": url
+                  type: "button",
+                  style: "primary",
+                  height: "md",
+                  action: {
+                    type: "uri",
+                    label: "加入會議",
+                    uri: url
                   }
                 },
                 {
-                  "type": "button",
-                  "style": "primary",
-                  "height": "sm",
-                  "action": {
-                    "type": "uri",
-                    "label": "下載 WEBEX 軟體（APP）",
-                    "uri": "https://liff.line.me/1656122875-Rnlb03LP"
+                  type: "button",
+                  style: "primary",
+                  height: "sm",
+                  action: {
+                    type: "uri",
+                    label: "下載 WEBEX 軟體（APP）",
+                    uri: "https://liff.line.me/1656122875-Rnlb03LP"
                   },
-                  "color": "#FF77FF",
-                  "offsetTop": "xs"
+                  color: "#FF77FF",
+                  offsetTop: "xs"
                 }
               ],
               "flex": 0
