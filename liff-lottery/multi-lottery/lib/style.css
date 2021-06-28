@@ -1,0 +1,118 @@
+* {
+    font-family: '微軟正黑體';
+}
+
+
+body {
+    text-align: center;
+}
+
+svg {
+    max-width: 1920px;
+    max-height: 830px;
+    position: absolute;
+    left: 0;
+}
+
+.snowflake {
+    fill: #F4F4F4;
+}
+
+html {
+    background-image: url(bg.jpg);
+    background-repeat: repeat-x;
+    background-position: left bottom;
+    background-attachment: fixed;
+}
+
+.title {
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+#candidates {
+    font-size: 28px;
+}
+
+.card {
+    width: 24%;
+    height: 60px;
+    margin: 5px;
+    position: center;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.34);
+}
+
+#people {
+    font: 28px/1.5 微軟正黑體, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    float: left;
+}
+
+.card div, .card1 div, .card2 div, .card3 div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 6px;
+    background: #07A89F;
+    display: -ms-flexbox;
+    display: flex;
+    -o-box-pack: center;
+    justify-content: center;
+    -o-box-align: center;
+    align-items: center;
+    font: 16px/1.5 微軟正黑體, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 36px;
+    -webkit-font-smoothing: antialiased;
+    color: #ffffff;
+}
+
+.card1 div, .card2 div, .card3 div {
+    font: 40px/1.5 微軟正黑體, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: auto;
+}
+
+.card1 {
+    width: 50%;
+    height: 80px;
+    margin: 40px auto auto auto;
+    position: center;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.34);
+}
+
+.card2 {
+    width: 40%;
+    height: 80px;
+    margin: 40px auto auto auto;
+    position: center;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.34);
+}
+
+.card3 {
+    width: 31%;
+    height: 80px;
+    margin: 40px auto auto auto;
+    position: center;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.34);
+}
+
+
+.name_list {
+    margin: 0 auto;
+}
+
+.re-box {
+    margin-top: 80px;
+}
